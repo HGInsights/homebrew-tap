@@ -5,28 +5,28 @@
 class GimmeSnowflakeCreds < Formula
   desc "Okta > OAuth > Snowflake > Creds"
   homepage "https://github.com/hginsights/gimme-snowflake-creds"
-  version "0.2.3"
+  version "0.3.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.2.3/gimme-snowflake-creds_0.2.3_darwin_amd64.tar.gz"
-      sha256 "e251ff854b56e7670ff5e90a47f9be7e97a06a162a6a47e2a1fec448a7a9f305"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.0/gimme-snowflake-creds_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1c1c6a941a08f1ffb55efd0745242013ca6d6e1859824c9ab446c0542e2f5681"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.2.3/gimme-snowflake-creds_0.2.3_darwin_arm64.tar.gz"
-      sha256 "3ef27d9d864c55cc79e57ff45c5db55786fe7d8c6e81439137e6f2b878692b59"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.0/gimme-snowflake-creds_0.3.0_darwin_arm64.tar.gz"
+      sha256 "be163bdf3cdbda3c78edf47e814c89f94917481a98c380ca541f3c946c8bccd7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.2.3/gimme-snowflake-creds_0.2.3_linux_amd64.tar.gz"
-      sha256 "1714d4a9cd9889d0476738c77a62f3db41ca6b3d512ae3f0044568b99838265d"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.0/gimme-snowflake-creds_0.3.0_linux_amd64.tar.gz"
+      sha256 "731269da2c90dfb768d2b733177a21b5096b1c852d2a3300430817fbd8663140"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.2.3/gimme-snowflake-creds_0.2.3_linux_arm64.tar.gz"
-      sha256 "d536574e906bde53b3d37ad655e7568f77a9406739bcb809bfe8392e4c6c3e6f"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.0/gimme-snowflake-creds_0.3.0_linux_arm64.tar.gz"
+      sha256 "9348624e77d07e7ec42262bf2972ec3b58788d4b820c17d6f8efbdfd7541f42d"
     end
   end
 
