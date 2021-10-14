@@ -6,28 +6,28 @@ require_relative "../custom_download_strategy"
 class GimmeSnowflakeCreds < Formula
   desc "Okta > OAuth > Snowflake > Creds"
   homepage "https://github.com/hginsights/gimme-snowflake-creds"
-  version "0.3.4"
+  version "0.3.5"
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.4/gimme-snowflake-creds_0.3.4_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "ab434795f7ba2d081e3547647a3a350ee586d619b7d102d7887eeaee074a2d40"
-    end
     if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.4/gimme-snowflake-creds_0.3.4_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "7d1692c88cf7ff072b4ca1855e551b8c2cc3e1ea1a792381789a86fbbb3afaef"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.5/gimme-snowflake-creds_0.3.5_darwin_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "b79e57b8280eece1cc0675606bb1549b3f995a9be2322a27c2920c9bd29ecf68"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.5/gimme-snowflake-creds_0.3.5_darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "9a93b5a412552624660bc874ca520bd9e1094de0d6d7d962a2f8a2020c9506af"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.4/gimme-snowflake-creds_0.3.4_linux_arm64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "fd7a705986889f55ca19e1f0a3611b18757aac9ea3b7386db6d0c935003242ef"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.5/gimme-snowflake-creds_0.3.5_linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "9eb6320a90c62473b299b03c69462e9874eb03101c8184ccedd08bb89380de5f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.4/gimme-snowflake-creds_0.3.4_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryDownloadStrategy
-      sha256 "3816c1047e3701d9f6b0847b9ca8c600d6b79f22579be3d64da14e64454103a8"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.3.5/gimme-snowflake-creds_0.3.5_linux_amd64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "bde5d9b3be4c7b96a1a1d703c85c8a5a9e6aa8eaf37d5841a799a83010a6bf5f"
     end
   end
 
