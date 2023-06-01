@@ -5,20 +5,20 @@
 class GimmeSnowflakeCreds < Formula
   desc "Okta > OAuth > Snowflake > Creds"
   homepage "https://github.com/hginsights/gimme-snowflake-creds"
-  version "0.7.3"
+  version "0.7.4"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.3/gimme-snowflake-creds_0.7.3_darwin_amd64.tar.gz"
-      sha256 "38dfff2d5e5efb8ed26dd40cc9ceb3c8198013486ef510ec880e2e750cb8b1fc"
+    if Hardware::CPU.arm?
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.4/gimme-snowflake-creds_0.7.4_darwin_arm64.tar.gz"
+      sha256 "90dc82a8e278becfa3c24356bd59b5c5daec0df42909a211dbb20f9be7e54d9c"
 
       def install
         bin.install "gimme-snowflake-creds"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.3/gimme-snowflake-creds_0.7.3_darwin_arm64.tar.gz"
-      sha256 "8bc47b7d3a25f89743e232c32512d2f88350f9d9536c1d42f28270fb85033938"
+    if Hardware::CPU.intel?
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.4/gimme-snowflake-creds_0.7.4_darwin_amd64.tar.gz"
+      sha256 "2804bf1e7604523ada00f6e3927aa6e861ebbb0ea432961237f1e9cda5044ebd"
 
       def install
         bin.install "gimme-snowflake-creds"
@@ -28,16 +28,16 @@ class GimmeSnowflakeCreds < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.3/gimme-snowflake-creds_0.7.3_linux_arm64.tar.gz"
-      sha256 "26dfbf2c6e59176b31ca11c56713d1a06dac626a6a20919c2a41e2ca86c8e276"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.4/gimme-snowflake-creds_0.7.4_linux_arm64.tar.gz"
+      sha256 "ea9c951ad77c688faaf6dcf9ce53a491031115078940af63f5f3f7c41dfcf624"
 
       def install
         bin.install "gimme-snowflake-creds"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.3/gimme-snowflake-creds_0.7.3_linux_amd64.tar.gz"
-      sha256 "b5e33b8787e23b07953769a21c96ef28f7ba9f0befe52dfa22ee260f0a6333ae"
+      url "https://github.com/HGInsights/gimme-snowflake-creds/releases/download/0.7.4/gimme-snowflake-creds_0.7.4_linux_amd64.tar.gz"
+      sha256 "da70eaabd88aea1d7786b14907ebe776f2d6f0e8cba7126aeca4b341f90448a4"
 
       def install
         bin.install "gimme-snowflake-creds"
