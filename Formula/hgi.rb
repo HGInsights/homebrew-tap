@@ -1,28 +1,28 @@
 class Hgi < Formula
   desc "Command-line client for the HG Insights MCP server"
   homepage "https://github.com/HGInsights/hgi-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.0/hgi-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "3a889e328df736254ebb9ce5fc5aedfc7866acda9d144dc2445cd0ba2f6abf4a"
+      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.1/hgi-v0.1.1-darwin-arm64.tar.gz"
+      sha256 "e41d6e15be1b50d9287ce4e72b59f32329cc24d34c410797869b9612b3d61ec2"
     end
     on_intel do
-      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.0/hgi-v0.1.0-darwin-x64.tar.gz"
-      sha256 "75c66a20651d1adedfc9c427ba460ef06d96ef1eca498cdb98b0c391d3b0efc6"
+      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.1/hgi-v0.1.1-darwin-x64.tar.gz"
+      sha256 "d20f520bc3109996306e4aa419414f8cba04e17c2abdfe1bcfd469ae8f837b39"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.0/hgi-v0.1.0-linux-arm64.tar.gz"
-      sha256 "cf43a92a08da8f31a24254616610484f6c09956267d3e7374b0cb1c0daca41f1"
+      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.1/hgi-v0.1.1-linux-arm64.tar.gz"
+      sha256 "6b0e8c857f8a4d9c4a680ecea9a2762de72389cb89d09265ba2c82fdcddc6ba0"
     end
     on_intel do
-      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.0/hgi-v0.1.0-linux-x64.tar.gz"
-      sha256 "355841fac8d5795cdec1a34934577300ec5f7fa24062f13c00f84166e757d2f1"
+      url "https://github.com/HGInsights/hgi-cli/releases/download/v0.1.1/hgi-v0.1.1-linux-x64.tar.gz"
+      sha256 "d315720963c41c2bad3e3226e38725d5e55c13dee822e42d4553e1572aa69f23"
     end
   end
 
